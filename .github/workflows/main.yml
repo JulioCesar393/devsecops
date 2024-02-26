@@ -18,3 +18,13 @@ jobs:
          - name: run a multi-line script
            run: |
               echo "hola mundo"
+
+test:
+   needs: build
+   runs-on: ubuntu-latest
+
+steps:
+
+  - name: Hola
+    run: | 
+       echo "hola"
